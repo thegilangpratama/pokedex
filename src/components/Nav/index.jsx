@@ -5,15 +5,21 @@ import { setFilter } from '../../redux/actions/root';
 
 import { Link } from 'react-router-dom';
 
+//import Drawer from '@material-ui/core';
 import Button from '@material-ui/core/Button';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
+import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemText from '@material-ui/core/ListItemText';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 import InputBase from '@material-ui/core/InputBase';
 import { fade, makeStyles } from '@material-ui/core/styles';
 import TabletMacIcon from '@material-ui/icons/TabletMac';
 import SearchIcon from '@material-ui/icons/Search';
+
+import SideDrawer from "../MyPokeList";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -38,6 +44,9 @@ const useStyles = makeStyles(theme => ({
     },
     marginLeft: '4rem',
     width: '70vw',
+  },
+  MyPokeButton: {
+    marginLeft: '4rem',
   },
   searchIcon: {
     width: theme.spacing(7),
@@ -68,6 +77,14 @@ const useStyles = makeStyles(theme => ({
     fontStyle: 'italic'
   }
 }));
+
+const navLinksEmpty = [
+  { title: 'You haven\'t catched any Pokemon, try to catch some' },
+];
+
+const navLinks = [
+  { title: 'These are your Pokemons' },
+];
 
 function Navbar({ pokemons, setFilter, filter, page }) {
   const classes = useStyles();
@@ -113,10 +130,36 @@ function Navbar({ pokemons, setFilter, filter, page }) {
             </div>
           : <>
               <Link to="/">
-                <Button variant="contained" className={classes.btn}>Back to Pokédex</Button>
+                <Button variant="contained" className={classes.btn}>Back</Button>
               </Link>
-              <Typography variant="h6" className={classes.try}>Try navigating between pokemons</Typography>
+              <Typography variant="h6" className={classes.try}></Typography>
             </> }
+            {/* <div className={classes.MyPokeButton}>
+              <Button onClick={openNavbar} color="inherit">My Pokemon</Button>
+            </div> */}
+            <List
+              component="nav"
+              aria-labelledby="main navigation"
+              className={classes.navDisplayFlex}
+            >
+              {/* {cart.length === 0 ?
+              navLinksEmpty.map(({ title, path }) => (
+                <a href={path} key={title} className={classes.linkText}>
+                  <ListItem button>
+                    <ListItemText />
+                  </ListItem>
+                </a>
+              ))
+              :
+              navLinks.map(({ title, path }) => (
+                <a href={path} key={title} className={classes.linkText}>
+                  <ListItem button>
+                    <ListItemText />
+                  </ListItem>
+                </a>
+              ))} */}
+            </List>
+          <SideDrawer navLinks={navLinks} />
         </Toolbar>
       </AppBar>
     </div>
