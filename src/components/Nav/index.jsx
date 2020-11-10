@@ -79,7 +79,7 @@ const useStyles = makeStyles(theme => ({
 }));
 
 const navLinks = [
-  { title: 'My Pokemon Lists' },
+  { title: 'My Catched Pokemon' },
 ];
 
 function Navbar({ pokemons, setFilter, filter, page }) {

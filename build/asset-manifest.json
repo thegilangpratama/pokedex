@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/PokedexTokopedia/static/css/main.2fa49d2a.chunk.css",
+    "main.js": "/PokedexTokopedia/static/js/main.f49ec6ea.chunk.js",
+    "main.js.map": "/PokedexTokopedia/static/js/main.f49ec6ea.chunk.js.map",
+    "runtime-main.js": "/PokedexTokopedia/static/js/runtime-main.0523b176.js",
+    "runtime-main.js.map": "/PokedexTokopedia/static/js/runtime-main.0523b176.js.map",
+    "static/js/2.4bd16ad8.chunk.js": "/PokedexTokopedia/static/js/2.4bd16ad8.chunk.js",
+    "static/js/2.4bd16ad8.chunk.js.map": "/PokedexTokopedia/static/js/2.4bd16ad8.chunk.js.map",
+    "index.html": "/PokedexTokopedia/index.html",
+    "precache-manifest.00c82655e2d7dda05e18812f41cfe693.js": "/PokedexTokopedia/precache-manifest.00c82655e2d7dda05e18812f41cfe693.js",
+    "service-worker.js": "/PokedexTokopedia/service-worker.js",
+    "static/css/main.2fa49d2a.chunk.css.map": "/PokedexTokopedia/static/css/main.2fa49d2a.chunk.css.map",
+    "static/js/2.4bd16ad8.chunk.js.LICENSE.txt": "/PokedexTokopedia/static/js/2.4bd16ad8.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0523b176.js",
+    "static/js/2.4bd16ad8.chunk.js",
+    "static/css/main.2fa49d2a.chunk.css",
+    "static/js/main.f49ec6ea.chunk.js"
+  ]
+}
