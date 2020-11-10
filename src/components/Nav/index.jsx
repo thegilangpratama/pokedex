@@ -10,8 +10,8 @@ import Button from '@material-ui/core/Button';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemText from '@material-ui/core/ListItemText';
+// import ListItem from '@material-ui/core/ListItem';
+// import ListItemText from '@material-ui/core/ListItemText';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 import InputBase from '@material-ui/core/InputBase';
@@ -78,12 +78,8 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-const navLinksEmpty = [
-  { title: 'You haven\'t catched any Pokemon, try to catch some' },
-];
-
 const navLinks = [
-  { title: 'These are your Pokemons' },
+  { title: 'My Pokemon Lists' },
 ];
 
 function Navbar({ pokemons, setFilter, filter, page }) {
