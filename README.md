@@ -18,6 +18,7 @@ Made possible with:
 <br>
 use npm install and npm start to launch the project
 <br>
+Live demo: https://gilpratama.github.io/PokedexTokopedia/
 <br>
 <br>
 <br>
