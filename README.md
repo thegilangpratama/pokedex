@@ -1,6 +1,5 @@
 # Pokédex
 
-Project Assignment for Sofware Engineer - Web Platform at Tokopedia
 <br> Project Name: Pokedex Progressive Web App
 <br> Repo by: Gilang K. Pratama (gilpratama@outlook.com)
 <br> feel free to contact me if there is problem occured
@@ -17,9 +16,7 @@ Made possible with:
 
 <br>
 use npm install and npm start to launch the project
-<br>
-Live demo: https://gilpratama.github.io/PokedexTokopedia/
-<br>
+<br><br>
 <br>
 <br>
 <br>
