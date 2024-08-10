@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/PokedexTokopedia/static/css/main.2fa49d2a.chunk.css",
-    "main.js": "/PokedexTokopedia/static/js/main.0722fe86.chunk.js",
-    "main.js.map": "/PokedexTokopedia/static/js/main.0722fe86.chunk.js.map",
-    "runtime-main.js": "/PokedexTokopedia/static/js/runtime-main.0523b176.js",
-    "runtime-main.js.map": "/PokedexTokopedia/static/js/runtime-main.0523b176.js.map",
-    "static/js/2.4bd16ad8.chunk.js": "/PokedexTokopedia/static/js/2.4bd16ad8.chunk.js",
-    "static/js/2.4bd16ad8.chunk.js.map": "/PokedexTokopedia/static/js/2.4bd16ad8.chunk.js.map",
-    "index.html": "/PokedexTokopedia/index.html",
-    "precache-manifest.f820cd160e77dccb8b9e66c07cb08d01.js": "/PokedexTokopedia/precache-manifest.f820cd160e77dccb8b9e66c07cb08d01.js",
-    "service-worker.js": "/PokedexTokopedia/service-worker.js",
-    "static/css/main.2fa49d2a.chunk.css.map": "/PokedexTokopedia/static/css/main.2fa49d2a.chunk.css.map",
-    "static/js/2.4bd16ad8.chunk.js.LICENSE.txt": "/PokedexTokopedia/static/js/2.4bd16ad8.chunk.js.LICENSE.txt"
+    "main.css": "/Pokedex/static/css/main.2fa49d2a.chunk.css",
+    "main.js": "/Pokedex/static/js/main.0722fe86.chunk.js",
+    "main.js.map": "/Pokedex/static/js/main.0722fe86.chunk.js.map",
+    "runtime-main.js": "/Pokedex/static/js/runtime-main.0523b176.js",
+    "runtime-main.js.map": "/Pokedex/static/js/runtime-main.0523b176.js.map",
+    "static/js/2.4bd16ad8.chunk.js": "/Pokedex/static/js/2.4bd16ad8.chunk.js",
+    "static/js/2.4bd16ad8.chunk.js.map": "/Pokedex/static/js/2.4bd16ad8.chunk.js.map",
+    "index.html": "/Pokedex/index.html",
+    "precache-manifest.f820cd160e77dccb8b9e66c07cb08d01.js": "/Pokedex/precache-manifest.f820cd160e77dccb8b9e66c07cb08d01.js",
+    "service-worker.js": "/Pokedex/service-worker.js",
+    "static/css/main.2fa49d2a.chunk.css.map": "/Pokedex/static/css/main.2fa49d2a.chunk.css.map",
+    "static/js/2.4bd16ad8.chunk.js.LICENSE.txt": "/Pokedex/static/js/2.4bd16ad8.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.0523b176.js",

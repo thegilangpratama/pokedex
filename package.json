@@ -1,6 +1,6 @@
 {
-  "homepage": "http://gilpratama.github.io/PokedexTokopedia",
-  "name": "pokedextokopedia",
+  "homepage": "http://gilpratama.github.io/Pokedex",
+  "name": "Pokedex",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -13,13 +13,12 @@
     "react": "^16.12.0",
     "react-customizable-progressbar": "^1.0.0",
     "react-dom": "^16.12.0",
-    "react-router-dom": "^5.1.2",
-    "react-scripts": "3.3.1"
+    "react-router-dom": "^5.1.2"
   },
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
+    "start": "react-scripts start NODE_OPTIONS=--openssl-legacy-provider react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -42,9 +41,11 @@
   "devDependencies": {
     "gh-pages": "^3.1.0",
     "react-redux": "^7.1.3",
+    "react-scripts": "^5.0.1",
     "redux": "^4.0.5",
     "redux-logger": "^3.0.6",
     "redux-saga": "^1.1.3",
-    "redux-thunk": "^2.3.0"
+    "redux-thunk": "^2.3.0",
+    "webpack": "^5.93.0"
   }
 }
