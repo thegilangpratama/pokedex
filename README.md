@@ -16,8 +16,3 @@ Made possible with:
 
 <br>
 use npm install and npm start to launch the project
-<br><br>
-<br>
-<br>
-<br>
-*ps. Please hire me 🥺
