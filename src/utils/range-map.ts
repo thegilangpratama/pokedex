@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 export default function rangeMap(n: number, fn: (i: number) => any) {
   const arr = []
   while (n > arr.length) {
