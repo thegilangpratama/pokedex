@@ -11,7 +11,7 @@
     "format": "prettier --cache --write ."
   },
   "dependencies": {
-    "clsx": "^1.2.1",
+    "clsx": "^2.1.1",
     "next": "^14.2.5",
     "react": "18.2.0",
     "react-cool-inview": "^3.0.1",
