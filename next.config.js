@@ -4,6 +4,7 @@ const nextConfig = {
   reactStrictMode: true,
 
   experimental: {
+    swcLoader: true,
     newNextLinkBehavior: true,
     scrollRestoration: true,
 
