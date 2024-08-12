@@ -36,7 +36,7 @@ const PokemonCard: FC<PokemonCardProps> = ({ url, index, ...props }) => {
       {...props}
     >
       <div
-        className="relative flex h-2/3 w-full flex-col items-center justify-center overflow-hidden rounded-t-2xl"
+        className="relative flex h-2/3 w-full flex-col items-center justify-center overflow-hidden rounded-t-2xl backdrop-blur-xl"
         style={{
           background: `linear-gradient(0deg, #fafafa, ${bgColors[0].light})`,
         }}
@@ -55,7 +55,7 @@ const PokemonCard: FC<PokemonCardProps> = ({ url, index, ...props }) => {
         {/* The next/image component is not used here because this project is hosted by vercel and they 
       only allow 1000 image optimizations per month on the free tier. */}
         <img
-          src={`${IMG_URL + id}.webp`}
+          src={`${IMG_URL + id}.svg`}
           alt={name}
           height={200}
           width={200}
@@ -71,7 +71,7 @@ const PokemonCard: FC<PokemonCardProps> = ({ url, index, ...props }) => {
           {name}
         </h3>
 
-        <div className="flex w-full flex-row items-center justify-center gap-4">
+        <div className="flex w-full flex-row items-center justify-center gap-4 backdrop-blur-xl">
           {types.map((t: Type, idx: number) => {
             return (
               <div
@@ -81,9 +81,9 @@ const PokemonCard: FC<PokemonCardProps> = ({ url, index, ...props }) => {
                     ([key]) => key === t.type.name
                   )[0][1].medium,
                 }}
-                className="rounded-md px-2 py-1"
+                className="rounded-xl px-3 py-1"
               >
-                <p className="text-xs font-semibold tracking-wide text-primary">
+                <p className="text-xs font-semibold tracking-wide text-white">
                   {t.type.name.toUpperCase()}
                 </p>
               </div>

@@ -19,7 +19,7 @@ export const normalizePokemon = ({
     name: pokemon.name,
     jpName: species.names.find((name: any) => name.language.name === 'ja-Hrkt')
       .name,
-    image: `${IMG_URL + pokemon.id}.webp`,
+    image: `${IMG_URL + pokemon.id}.svg`,
     bgColors: getBackgroundColors(pokemon.types),
     types: pokemon.types,
     flavorText: species.flavor_text_entries.find(
@@ -40,7 +40,7 @@ export const normalizePokemonLite = ({ pokemon }: NormalizePokemonLite) => {
   const data = {
     id: pokemon.id,
     name: pokemon.name,
-    image: `${IMG_URL + pokemon.id}.webp`,
+    image: `${IMG_URL + pokemon.id}.svg`,
     bgColors: getBackgroundColors(pokemon.types),
     types: pokemon.types,
   }

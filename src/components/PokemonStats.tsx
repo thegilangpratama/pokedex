@@ -23,7 +23,7 @@ const PokemonStats = ({ pokemon }: PokemonStatsProps) => {
                     ([key]) => key === name
                   )[0][1].medium,
                 }}
-                className="select-none rounded-md px-2 py-1 text-xs font-bold uppercase tracking-wide text-primary"
+                className="select-none rounded-xl px-2 py-1 text-xs font-bold uppercase tracking-wide text-white"
               >
                 {name}
               </div>

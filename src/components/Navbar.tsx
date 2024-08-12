@@ -1,19 +1,42 @@
 /* eslint-disable react/jsx-key */
-import Link from 'next/link'
-import { BsGithub } from 'react-icons/bs'
+import useScroll from "@/hooks/use-scroll";
+import { Github } from "@/utils/icons";
+import Link from 'next/link';
 
 const Navbar = () => {
+  const scrolled = useScroll(50);
   return (
-    <header className="fixed inset-x-0 top-0 z-50 h-14 w-full bg-primary px-3 shadow-md shadow-secondary/20">
-      <div className="mx-auto flex h-full w-full max-w-7xl flex-row items-center justify-between">
-        <Link href="/">
-          <h1 className="text-2xl font-bold text-accent">Pokédex</h1>
+    <div
+      className={`fixed top-0 w-full flex justify-center ${scrolled
+        ? "border-b border-gray-200 bg-white/50 backdrop-blur-xl"
+        : "bg-white/0"
+        } z-30 transition-all`}
+    >
+      <div className="mx-5 flex h-16 max-w-screen-xl items-center justify-between w-full">
+        <Link href="/" className="flex items-center font-display text-2xl">
+          {/* <Image
+              src="/logo.png"
+              alt="Precedent logo"
+              width="30"
+              height="30"
+              className="mr-2 rounded-sm"
+            ></Image> */}
+          <p className="text-red-600 font-bold">Pokedex</p>
         </Link>
-        <Link href="https://github.com/Louis3797/nextjs-pokedex">
-          <BsGithub className="text-3xl duration-500 ease-in-out hover:text-accent" />
-        </Link>
+        <a
+          className="flex max-w-fit items-center justify-center space-x-2 rounded-full border border-gray-300 bg-white px-5 py-2 text-sm text-gray-600 shadow-md transition-colors hover:border-gray-800"
+          href="https://github.com/thegilangpratama/pokedex"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Github />
+          <p>
+            <span className="hidden sm:inline-block">Repository</span>
+            {/* <span className="font-semibold">{nFormatter(stars)}</span> */}
+          </p>
+        </a>
       </div>
-    </header>
+    </div>
   )
 }
 
